@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>Vite + React + TS</title>
+  </head>
+  <body>
+  </body>
+
+  <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs"></script>
+    <script>
+    async function testModel() {
+        const model = await tf.loadLayersModel('/public/tfjs_keras_model/model.json');
+        console.log("Model loaded!", model);
+    }
+    testModel();
+    </script>
+
+</html>
